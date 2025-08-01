@@ -16,21 +16,13 @@
     // We are not transpiling, so preserve our source code and do not emit files
     "module": "preserve",
     "noEmit": true,
-    // Include the DOM types
-    "lib": [
-      "es2022",
-      "dom",
-      "dom.iterable"
-    ],
+    "lib": ["es2022", "dom", "dom.iterable"],
     "noUnusedLocals": false,
-    "noUnusedParameters": false, 
-    "noImplicitAny": false
+    "noUnusedParameters": false,
+    "noImplicitAny": false,
+    "outDir": "dist"
   },
   // Include the necessary files for your project
-  "include": [
-    "src"
-  ],
-  "exclude": [
-    "node_modules"
-  ]
+  "include": ["src"],
+  "exclude": ["node_modules"]
 }

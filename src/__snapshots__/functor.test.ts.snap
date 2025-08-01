@@ -1,0 +1,104 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`functor 1`] = `
+[
+  "1",
+  "2",
+  "3",
+]
+`;
+
+exports[`functor 2`] = `
+Map {
+  "apple" => 100.23,
+  "orange" => 24.5,
+}
+`;
+
+exports[`functor 3`] = `
+{
+  "constructor": {
+    "name": "List",
+  },
+  "head": 1,
+  "tag": "Cons",
+  "tail": {
+    "constructor": {
+      "name": "List",
+    },
+    "head": 2,
+    "tag": "Cons",
+    "tail": {
+      "constructor": {
+        "name": "List",
+      },
+      "head": 3,
+      "tag": "Cons",
+      "tail": {
+        "constructor": {
+          "name": "List",
+        },
+        "head": 4,
+        "tag": "Cons",
+        "tail": {
+          "constructor": {
+            "name": "List",
+          },
+          "head": 5,
+          "tag": "Cons",
+          "tail": {
+            "constructor": {
+              "name": "List",
+            },
+            "tag": "Nil",
+          },
+        },
+      },
+    },
+  },
+}
+`;
+
+exports[`functor 4`] = `
+{
+  "constructor": {
+    "name": "List",
+  },
+  "head": "1",
+  "tag": "Cons",
+  "tail": {
+    "constructor": {
+      "name": "List",
+    },
+    "head": "2",
+    "tag": "Cons",
+    "tail": {
+      "constructor": {
+        "name": "List",
+      },
+      "head": "3",
+      "tag": "Cons",
+      "tail": {
+        "constructor": {
+          "name": "List",
+        },
+        "head": "4",
+        "tag": "Cons",
+        "tail": {
+          "constructor": {
+            "name": "List",
+          },
+          "head": "5",
+          "tag": "Cons",
+          "tail": {
+            "constructor": {
+              "name": "List",
+            },
+            "tag": "Nil",
+          },
+        },
+      },
+    },
+  },
+}
+`;
