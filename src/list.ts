@@ -5,12 +5,12 @@ type Constructor<name extends string> = {
   };
 };
 
-export type Nil = Constructor<"List"> & { tag: "Nil" };
+export type Nil = Constructor<"List"> & { readonly tag: "Nil" };
 
 export type Cons<a> = Constructor<"List"> & {
-  tag: "Cons";
-  head: a;
-  tail: List<a>;
+  readonly tag: "Cons";
+  readonly head: a;
+  readonly tail: List<a>;
 };
 
 export type List<a> = Nil | Cons<a>;
