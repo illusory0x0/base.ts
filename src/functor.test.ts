@@ -18,4 +18,8 @@ test("functor", () => {
 
   expect(zs).toMatchSnapshot();
   expect(Functor.map(zs, (x) => x.toString())).toMatchSnapshot();
+
+  let zs_ = List.Cons(1,zs)
+
+  expect(zs.constructor).toBe(zs_.constructor)
 });

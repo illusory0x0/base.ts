@@ -1,13 +1,15 @@
 import { Functor } from "./functor";
 
+export let map = <a, b>(xs: a[], f: (x: a) => b): b[] => {
+  return xs.map(f);
+};
+
 export let Array: {
-  name: "Array";
+  readonly name: "Array";
   map<a, b>(xs: a[], f: (x: a) => b): b[];
 } = {
   name: "Array",
-  map: (xs, f) => {
-    return xs.map(f);
-  },
+  map,
 };
 
 export type Array<T> = globalThis.Array<T>;
